@@ -1,0 +1,15 @@
+package com.dxc.service;
+
+import java.util.Map;
+
+import com.dxc.model.User;
+
+public class JWTTokenGeneratorService implements TokenGeneratorService {
+
+	@Override
+	public Map<String, String> generateToken(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

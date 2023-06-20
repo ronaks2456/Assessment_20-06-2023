@@ -1,0 +1,6 @@
+package com.dxc.model;
+
+public class UserCredential {
+	private String userId;
+	private String userPassword;
+}

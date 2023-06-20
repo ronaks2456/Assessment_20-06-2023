@@ -1,0 +1,5 @@
+package com.dxc.service;
+
+public interface TokenGeneratorService {
+	Map<String,String> generateToken(User user);
+}

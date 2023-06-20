@@ -1,0 +1,4 @@
+INDEX VERSION 1.132+C:\Users\rswayam\OneDrive - DXC Production\Desktop\Assessment\20-06-23\.metadata\.plugins\org.eclipse.jdt.core
+925135804.index
+1865797976.index
+1963614177.index

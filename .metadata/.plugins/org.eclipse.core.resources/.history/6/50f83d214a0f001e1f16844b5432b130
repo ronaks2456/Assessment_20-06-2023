@@ -1,0 +1,9 @@
+package com.dxc.service;
+
+import com.dxc.model.User;
+
+public interface UserService {
+	public User registerUser(User user);
+	public User authenticateUser(String userId, String userPassword);
+
+}

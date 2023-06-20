@@ -1,0 +1,42 @@
+package com.dxc.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.dxc.model.User;
+import com.dxc.service.UserService;
+
+@RestController
+@RequestMapping("/user")
+public class UserController {
+	
+	@Autowired
+	UserService service;
+	
+	@PostMapping("/create")
+	public User createUser(@RequestBody User user)
+	{
+		return service.createUser(user);
+	}
+	
+	@PutMapping("/update/userId-{userId}")
+	public User updateUser(@RequestBody User user, @PathVariable String userId)
+	{
+		return service.updateUser(user, userId);
+	}
+	
+	@GetMapping("/all-users")
+	public List<User> allUsers()
+	{
+		return service.getAllUser();
+	}
+
+}

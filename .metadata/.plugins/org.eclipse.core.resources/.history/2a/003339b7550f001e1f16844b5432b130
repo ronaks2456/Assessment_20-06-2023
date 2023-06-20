@@ -1,0 +1,12 @@
+package com.dxc.service;
+
+import com.dxc.model.Note;
+
+public interface NoteService {
+	//Create a Note, 
+	public Note createNote(Note note);
+	//update a note,
+	
+	//delete a note,
+	//get all notes of a specific userId
+}
